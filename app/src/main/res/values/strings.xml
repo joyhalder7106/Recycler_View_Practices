@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RecyclerView01</string>
+
+    <string-array name="pName">
+        <item>Ripon</item>
+        <item>Ovi</item>
+        <item>Joy</item>
+        <item>Akash</item>
+        <item>Raju</item>
+        <item>nahid</item>
+
+    </string-array>
+    <string-array name="disc">
+        <item>I am a student.\nstudy at national polytechnic institute</item>
+        <item>I am a student.\nstudy at national polytechnic institute</item>
+        <item>I am a student.\nstudy at national polytechnic institute</item>
+        <item>I am a student.\nstudy at national polytechnic institute</item>
+        <item>I am a student.\nstudy at national polytechnic institute</item>
+        <item>I am a student.\nstudy at national polytechnic institute</item>
+    </string-array>
+</resources>
