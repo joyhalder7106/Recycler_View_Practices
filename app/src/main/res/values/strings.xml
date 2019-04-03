@@ -3,19 +3,19 @@
 
     <string-array name="pName">
         <item>Ripon</item>
-        <item>Ovi</item>
-        <item>Joy</item>
-        <item>Akash</item>
-        <item>Raju</item>
+        <item>Munna</item>
+        <item>Atik</item>
+        <item>Habil</item>
+        <item>Fahad</item>
         <item>nahid</item>
 
     </string-array>
     <string-array name="disc">
-        <item>I am a student.\nstudy at national polytechnic institute</item>
-        <item>I am a student.\nstudy at national polytechnic institute</item>
-        <item>I am a student.\nstudy at national polytechnic institute</item>
-        <item>I am a student.\nstudy at national polytechnic institute</item>
-        <item>I am a student.\nstudy at national polytechnic institute</item>
-        <item>I am a student.\nstudy at national polytechnic institute</item>
+        <item>I am a student.</item>
+        <item>I am a student.</item>
+        <item>I am a student.</item>
+        <item>I am a student.</item>
+        <item>I am a student.</item>
+        <item>I am a student.</item>
     </string-array>
 </resources>
