@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     Context context;
@@ -16,7 +18,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public MyAdapter(Context context, String[] personName, String[] dis, int[] img) {
         this.context = context;
-        PersonName = personName;
+        this.PersonName = personName;
         this.dis = dis;
         this.img = img;
     }
@@ -30,11 +32,25 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
+    public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, final int i) {
 
         myViewHolder.textView1.setText(PersonName[i]);
         myViewHolder.textView2.setText(dis[i]);
         myViewHolder.imageView.setImageResource(img[i]);
+        myViewHolder.sfdj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, PersonName[i], Toast.LENGTH_SHORT).show();
+            }
+        });
+        myViewHolder.imageView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(context, PersonName[i], Toast.LENGTH_SHORT).show();
+
+                return true;
+            }
+        });
     }
 
     @Override
@@ -44,11 +60,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     class MyViewHolder extends RecyclerView.ViewHolder{
         TextView textView1,textView2;
         ImageView imageView;
+        LinearLayout sfdj;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             textView1=itemView.findViewById(R.id.textView1);
             textView2=itemView.findViewById(R.id.textView2);
             imageView=itemView.findViewById(R.id.imageView);
+            sfdj=itemView.findViewById(R.id.layoutId);
         }
     }
 }
